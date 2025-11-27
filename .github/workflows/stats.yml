@@ -1,8 +1,10 @@
 name: Estadisticas
 
-on: 
-   push: 
-     branches: [ main ]
+on:
+   schedule:
+      - cron: '0 0 * * *'
+   # push: 
+   #  branches: [ main ]
 
 jobs:
   build:
